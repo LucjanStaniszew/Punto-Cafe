@@ -1,0 +1,34 @@
+/* selector(etiqueta, class, id) {
+    propiedad: valor;
+} */
+ /* 1 rem = 16px --> NO CAMBIAR!!!!!*/
+/* Font Family: Nunito Sans */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/*  font-family: "Nunito Sans", sans-serif; */
+body {
+    background-color: #9F838C;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h1 {
+    color: #166088;
+    /* font-family: "Nunito Sans", sans-serif; */
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+p {
+    color: #9DC5BB;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.parrafo-diferente {
+    color: #436436;
+}
+
+#parrafo-unico {
+    color: #2F2235;
+}

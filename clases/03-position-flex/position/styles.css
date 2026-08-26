@@ -1,0 +1,74 @@
+/* Reset de CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(100, 100, 224);
+    height: 250vh;
+}
+
+/* Displays */
+
+/* VER MARGIN Y PADDING */
+
+div{
+    background-color: brown;
+    /* margin: 150px; */
+    /* padding: 10px 50px 20px 100px; */
+}
+
+.block{
+    height: 25vh;
+    width: 40vw;
+}
+
+.inline{
+    display: inline;
+    width: 50vw;
+    height: 25vh;
+}
+
+.inline-block{
+    display: inline-block;
+    height: 30vh;
+    width: 30vw;
+}
+
+/* Positions */
+
+.static{
+    position: static;
+}
+
+/* Sigue ocupando su lugar en el flujo */
+.relative{
+    
+    position: relative;
+    top: 20px;
+    left: 250px;
+}
+
+/* Sale del Flujo */
+.absolute{
+    background-color: aqua;
+    position: absolute;
+    top: 150px; /* Cuanto quiero que se separe del borde SUPERIOR */
+    left: 150px; /* Cuanto quiero que se separe del borde IZQUIERDO */
+}
+
+/* Sale del Flujo */
+.fixed{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/* Sigue ocupando su lugar en el flujo */
+.sticky{
+    position: sticky;
+    top: 0;
+    background-color: aliceblue;
+}

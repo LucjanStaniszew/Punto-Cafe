@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    /* Aca se debe lograr que los elementos se ubiquen en una fila de 3 y una de dos (wrap) usando además propiedades como justify, align y gap */
+}
+
+.card{
+    height: 45vh;
+    width: 30vw;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 15px;
+}
+
+.card-img{
+    width: 10vw;
+    height: auto;
+}

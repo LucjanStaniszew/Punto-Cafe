@@ -1,0 +1,106 @@
+Copyright:
+<p>&copy;<span id="year"></span> Todos los Derechos Reservados</p>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    El script va antes del cierre del body
+
+FLIP CARD:
+<section class="coffee-card">
+    <h3>EJEMPLO</h3>
+        <article class="flip-card">
+            <div class="inner">
+                <div class="front">
+                    <figure>
+                        <img src="" alt="" title="">
+                    </figure>
+                </div>
+            <div class="back">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </article>
+</section>
+
+.coffee-card{
+    width: 300px;
+    text-align: center;
+    border-radius: 25px;
+}
+.flip-card{
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+/* Aqui comienza el elemento que gira */
+.inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+/* GIRO */
+.flip-card:hover .inner{
+    transform: rotateY(180deg);
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.front img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.back{
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+
+
+
+
+CSS:
+Fuentes:
+1- Titulos: Bricolage Grotesque
+https://fonts.google.com/specimen/Bricolage+Grotesque?preview.script=Latn
+2- Párrafos: Cormorant Garamond
+https://fonts.google.com/specimen/Cormorant+Garamond
+
+Colores:
+Fondo principal - Crema cálido - #F8F3EC
+Fondo secundario -Marfil - #FFFDF8
+Superficies -Beige suave - #EFE3D3
+Color principal - Café con leche - #8B5E3C
+Color secundario - Marrón medio - #6D4C35
+Texto principal - Espresso - #3D2B1F
+Texto secundario - Marrón grisáceo - #75685D
+Acento - Caramelo - #C98A4A
+
+Sección diferencias:
+☕ Jarrito Americano
+Una preparación suave obtenida al añadir agua caliente a un espresso. Conserva el sabor del café, pero con menor intensidad y un mayor volumen de bebida.
+
+☕ Jarrito Espresso
+Un café concentrado preparado al hacer pasar agua caliente a alta presión por café finamente molido. Se caracteriza por su cuerpo intenso y su capa de crema superficial.
+
+☕ Ristretto
+Versión más concentrada del espresso. Se prepara utilizando la misma cantidad de café, pero con menos agua, obteniendo una bebida de sabor intenso y textura más densa.
+
+☕ Café Doble
+También conocido como Doppio, consiste en una doble extracción de espresso. Ofrece mayor cantidad de café, manteniendo una intensidad y aroma más pronunciados.
+
+☕ Cappuccino
+Preparación elaborada con espresso, leche caliente y espuma de leche. Se distingue por el equilibrio entre sus tres capas y suele servirse con cacao o canela espolvoreada.
+
+☕ Café con Leche
+Bebida preparada combinando café y leche caliente en proporciones equilibradas. Su sabor es más suave que el espresso y resulta una de las preparaciones más tradicionales.

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/style.css">
+
+    <title>Punto Café | Menú</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <!-- <a href="../index.html" aria-label="Inicio" title="Inicio">
+            <figure>
+                <img class="logo" src="../assets/logo.png" alt="Logo de la Empresa Punto Café" title="Logo de Punto Café">
+            </figure>
+        </a>
+        <h1>Punto Café | Menú</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a class="nav-link" href="./cafes.html" aria-label="Café" title="Café">Tipos de Cafe</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#" aria-label="Menú" title="Menú">Menú</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./nosotros.html" aria-label="Sobre Nosotros" title="Sobre Nosotros">Sobre Nosotros</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./contacto.html" aria-label="Contacto" title="Contacto">Contactanos</a>
+                </li>
+            </ul>
+        </nav> -->
+        <nav class="navbar bg-propio">
+            <div class="container-fluid nav-container">
+                <a class="navbar-brand" href="../index.html">
+                    <figure>
+                        <img class="logo" src="../assets/logo.png" alt="Logo de la Empresa Punto Café" title="Logo de Punto Café">
+                    </figure>
+                </a>
+                <h1>Punto Café | Menú</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end bg-propio text-center" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Punto Café | Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cafes.html" aria-label="Café" title="Café">Tipos de Cafe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" aria-label="Menú" title="Menú">Menú</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html" aria-label="Sobre Nosotros" title="Sobre Nosotros">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html" aria-label="Contacto" title="Contacto">Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-menu">
+        <h2>Conocé nuestro Menú</h2>
+        <p>Nuestra propuesta combina diferentes preparaciones de café con opciones dulces y saladas para acompañar cada momento del día. Desde clásicos de pastelería hasta alternativas más completas, cada combinación está pensada para disfrutar el café junto a sabores que complementan su preparación.</p>
+        <!-- SE APLICA FLIP CARD, MÁS INFO EN NOTAS.TXT -->
+        <section class="menu-flex">
+            <article class="coffee-card">
+                <h3>Café con Leche y Brownie</h3>
+                <div class="flip-card">
+                    <div class="inner">
+                        <figure class="front">
+                            <img src="../assets/menu/cafe-con-brownie.png" alt="Taza de café con leche acompañada de un brownie de chocolate sobre una mesa de madera." title="Café con Leche y Brownies | Punto Café">
+                        </figure>
+                        <div class="back">
+                            <p>Café doble combinado con leche caliente y una capa de espuma. Se acompaña con una porción de brownie de chocolate artesanal, de textura húmeda y sabor intenso.</p>
+                            <p>$10.000</p>
+                            <button class="btn-order">Ordenar</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="coffee-card">
+                <h3>Café con Leche y Cookies</h3>
+                <div class="flip-card">
+                    <div class="inner">
+                        <figure class="front">
+                            <img src="../assets/menu/cafe-con-cookies.png" alt="Taza de café con leche acompañada de cookies artesanales sobre una mesa de madera." title="Café con Leche y Cookies | Punto Café">
+                        </figure>
+                        <div class="back">
+                            <p>Café doble preparado con leche caliente y espuma suave. Se acompaña con cookies artesanales de chocolate, con una textura ligeramente crocante por fuera y tierna en su interior.</p>
+                            <p>$9.000</p>
+                            <button class="btn-order">Ordenar</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="coffee-card">
+                <h3>Café con Leche y Brownie</h3>
+                <div class="flip-card">
+                    <div class="inner">
+                        <figure class="front">
+                            <img src="../assets/menu/cafe-con-medialunas.png"alt="Taza de café con leche acompañada de medialunas recién horneadas sobre una mesa de madera." title="Café con Leche y Medialunas | Punto Café">
+                        </figure>
+                        <div class="back">
+                            <p>Café doble combinado con leche caliente y espuma. Se acompaña con medialunas de masa hojaldrada, de textura liviana y superficie dorada.</p>
+                            <p>$7.500</p>
+                            <button class="btn-order">Ordenar</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="coffee-card">
+                <h3>Café con Leche y Porción de Torta</h3>
+                <div class="flip-card">
+                    <div class="inner">
+                        <figure class="front">
+                            <img src="../assets/menu/cafe-con-brownie.png" alt="Taza de café con leche acompañada de una porción de torta de chocolate sobre una mesa de madera." title="Café con Leche y Torta | Punto Café">
+                        </figure>
+                        <div class="back">
+                            <p>Café doble preparado con leche caliente y espuma suave. Se acompaña con una porción de torta de chocolate, elaborada con una miga húmeda y cobertura de chocolate.</p>
+                            <p>$15.000</p>
+                            <button class="btn-order">Ordenar</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="coffee-card">
+                <h3>Café con Leche y Tostadas</h3>
+                <div class="flip-card">
+                    <div class="inner">
+                        <figure class="front">
+                            <img src="../assets/menu/cafe-con-tostadas.png" alt="Taza de café con leche acompañada de tostadas doradas servidas sobre una mesa de madera." title="Café con Leche y Tostadas | Punto Café">
+                        </figure>
+                        <div class="back">
+                            <p>Café doble combinado con leche caliente y espuma. Se acompaña con tostadas de pan artesanal, doradas y crocantes, ideales para acompañar con manteca, dulce de leche o mermelada.</p>
+                            <p>$6.000</p>
+                            <button class="btn-order">Ordenar</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="coffee-card">
+                <h3>Café con Leche y Tostado de Jamón y Queso</h3>
+                <div class="flip-card">
+                    <div class="inner">
+                        <figure class="front">
+                            <img src="../assets/menu/cafe-con-tostado.png"alt="Taza de café con leche acompañada de un tostado de jamón y queso servido sobre una mesa de madera." title="Café con Leche y Tostado de Jamón y Queso | Punto Café">
+                        </figure>
+                        <div class="back">
+                            <p>Café doble preparado con leche caliente y espuma suave. Se acompaña con un tostado de jamón y queso, elaborado con pan dorado, jamón cocido y queso fundido.</p>
+                            <p>$12.000</p>
+                            <button class="btn-order">Ordenar</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Jesús y Luciano</p>
+        <p>&copy;<span id="year"></span> Todos los Derechos Reservados</p>
+        <nav class="footer-nav">
+            <ul class="rs">
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" title="Instagram" aria-label="Instagram">
+                        <img class="RRSS-img" src="../assets/logos/instagram.png" alt="Logo de Instagram" title="Logo de Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" title="Facebook" aria-label="Facebook">
+                        <img class="RRSS-img" src="../assets/logos/facebook.png" alt="Logo de Facebook" title="Logo de Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/" target="_blank" title="WhatsApp" aria-label="WhatsApp">
+                        <img class="RRSS-img ws" src="../assets/logos/whatsapp.png" alt="Logo de WhatsApp" title="Logo de WhatsApp">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/* .articulo-principal {
+    color: blue;
+}
+.articulo-principal:hover {
+    color: brown;
+    border: 1px solid black;
+}
+
+button {
+    background-color: green;
+}
+button:hover {
+    background-color: yellow;
+} */
+
+/* .link-button:link {
+    color: orange;
+}
+.link-button:visited {
+    color: coral;
+} */
+/* p {
+    color: green;
+}
+.parrafo-diferente {
+    color: black;
+} */
+
+/* p:not(.parrafo-diferente, .parrafo-alterno) {
+    color: green;
+} */
+
+/* p:nth-child(2) {
+    color: green;
+} */
+
+p:first-child {
+    color: green;
+}
+/* p:last-child {
+    color: green;
+} */
+
+.bg-nav-propia {
+    background-color: brown;
+}

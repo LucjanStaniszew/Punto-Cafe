@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+.caja{
+    margin: 15px;
+    background-color: crimson;
+    height: 25vh;
+    width: 25vw;
+}
+
+/* Propiedades a Ver: */
+/*
+display flex
+flex-direction: normal y reverse
+flex-wrap: si o no
+flex flow: vision y agrupamiento
+justify/align-content: // Ordena el contenido teniendo en cuenta el eje de sus hijos
+    -start
+    -center
+    -end
+    -spaces
+justify/align-items: // Ordena a los hijos teniendo en cuenta el eje del padre
+    -start
+    -center
+    -end
+order
+*/
+
+.flex{
+    height: 100vh;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+
+    justify-content: center; /* EJE PRINCIPAL */
+    /*align-items: ;*/ /* EJE SECUNDARIO */
+    align-content: center;
+}
+
+.a{
+
+}
+
+.b{
+    
+}
+
+.c{
+    
+}
+
+.d{
+    
+}
+
+.e{
+    
+}

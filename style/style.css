@@ -1,0 +1,309 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+/* font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Cormorant Garamond", serif; */
+/*
+Colores:
+Fondo principal - Crema cálido - #F8F3EC
+Fondo secundario - Marfil - #FFFDF8
+Superficies - Beige suave - #EFE3D3
+Color principal - Café con leche - #8B5E3C
+Color secundario - Marrón medio - #6D4C35
+Texto principal - Espresso - #3D2B1F
+Texto secundario - Marrón grisáceo - #75685D
+Acento - Caramelo - #C98A4A
+*/
+
+:root{
+    --font-ppal: "Bricolage Grotesque", sans-serif;
+    --font-sec: "Cormorant Garamond", serif;
+    --bg-ppal: #F8F3EC;
+    --bg-sec: #FFFDF8;
+    --surface: #EFE3D3;
+    --headings: #8B5E3C;
+    --text: #6D4C35;
+    --accent: #C98A4A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Cormorant Garamond", serif;
+    background-color: var(--bg-ppal);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: var(--headings);
+}
+p{
+    color: var(--accent);
+}
+main{
+    padding: 0 200px;
+}
+
+/* HEADER */
+header{
+    background-color: var(--bg-ppal);
+    z-index: 1;
+    margin-bottom: 32px;
+    /* height: 10vh; */
+    position: sticky;
+    top: 0;
+    padding: 0 20px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.logo {
+    height: 10vh;
+    width: auto;
+}
+
+header nav ul{
+    display: flex;
+    gap: 10px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+/* Bootstrap Nav */
+.bg-propio {
+    background-color: var(--bg-ppal);
+}
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* FOOTER */
+footer{
+    height: 10vh;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.footer-nav ul li {
+    list-style: none;
+}
+.rs{
+    display: flex;
+    gap: 20px;
+}
+.RRSS-img {
+    height: 5vh;
+    width: auto;
+}
+.ws{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+/* HOME */
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 75px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    gap: 50px;
+}
+.hero-logo{
+    height: 25vh;
+    width: auto;
+}
+.hero-title{
+    font-size: 2rem;
+}
+.hero-list{
+    color: var(--accent);
+}
+.hero-p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.hero-list{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.hero-list li{
+    padding: 5px;
+}
+.hero-nav{
+    display: flex;
+    gap: 10px;
+}
+.hero-nav a{
+    padding: 10px;
+    color: var(--text);
+    border: 2px solid var(--accent);
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.hero-img{
+    width: 45vw;
+    height: auto;
+    border-radius: 50px;
+}
+/* ESTILO DE CAFES */
+
+/* MENU */
+.main-menu{
+    text-align: center;
+}
+.main-menu h2{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.main-menu p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.menu-flex{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+.coffee-card{
+    /* padding: 30px; */
+    width: 15vw;
+    height: 52vh;
+    text-align: center;
+    border: 2px solid var(--text);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.coffee-card h3{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.flip-card{
+    width: 15vw;
+    height: 40vh;
+    perspective: 1000px;
+}
+/* Aqui comienza el elemento que gira */
+.inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+/* GIRO */
+.flip-card:hover .inner{
+    transform: rotateY(180deg);
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+.front img{
+    height: 40vh;
+    width: auto;
+    border-radius: 25px;
+    object-fit: cover;
+}
+.back{
+    text-align: center;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.back p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.btn-order{
+    padding: 15px;
+    background-color: var(--accent);
+    color: var(--bg-ppal);
+    font-weight: 900;
+    border: 2px solid var(--headings);
+    border-radius: 25px;
+}
+/* NOSOTROS */
+
+.sobre-nosotros {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.sobre-nosotros h2 {
+    font-size: 2.5rem;
+}
+.sobre-nosotros p {
+    font-size: 1.5rem;
+}
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+}
+.info-container p {
+    max-width: 50%;
+}
+.equipo {
+    max-width: 1150px;
+}
+.equipo img {
+    width: 100%;
+}
+.destacados {
+    margin: 32px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.destacados h2 {
+    font-size: 2.5rem;
+}
+.carousel-container {
+    max-width: 1150px;
+}
+
+/* CONTACTO */
