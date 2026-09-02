@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../style/style.css">
 
     <title>Punto Café | Contactanos</title>
-    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/hero-logo.png" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <nav class="navbar bg-propio">
             <div class="container-fluid nav-container">
                 <a class="navbar-brand" href="../index.html">
                     <figure>
-                        <img class="logo" src="../assets/logo.png" alt="Logo de la Empresa Punto Café" title="Logo de Punto Café">
+                        <img class="logo" src="../assets/hero-logo.png" alt="Logo de la Empresa Punto Café"
+                            title="Logo de Punto Café">
                     </figure>
                 </a>
                 <h1>Punto Café | Contacto</h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end bg-propio text-center" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end bg-propio text-center" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Punto Café | Contacto</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body ">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-3">
                             <li class="nav-item">
                                 <a class="nav-link" href="./cafes.html" aria-label="Café" title="Café">Tipos de Cafe</a>
                             </li>
@@ -38,7 +44,8 @@
                                 <a class="nav-link" href="./menu.html" aria-label="Menú" title="Menú">Menú</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./nosotros.html" aria-label="Sobre Nosotros" title="Sobre Nosotros">Sobre Nosotros</a>
+                                <a class="nav-link" href="./nosotros.html" aria-label="Sobre Nosotros"
+                                    title="Sobre Nosotros">Sobre Nosotros</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" aria-label="Contacto" title="Contacto">Contactanos</a>
@@ -50,32 +57,38 @@
         </nav>
     </header>
     <main>
-        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/36NMhpq6exkxnETYgZK1OJ?utm_source=generator&theme=0&si=0bb9849fe61b46a8" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class="spoty"></iframe>
+        <section class="feed">
+            <h2>Queremos conocer tu opinión</h2>
+            <p>¿Cuál fue tu café favorito? ¿Hay algo que te gustaría encontrar en nuestro menú?<br>Dejanos tu mensaje, contanos qué te gustó y compartí tus ideas con nosotros.</p>
+        </section>
+        <section class="main-contacto">
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2012.4051132461627!2d-64.55823980713866!3d-31.97585547324513!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2b0447c2bd5ff%3A0x3245f2bd7c030f4c!2sPlaza%20Jose%20Hernandez!5e0!3m2!1ses!2sar!4v1784734245130!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="maps"></iframe>
-
-        <form action="">
-            <div>
-                <label for="name">Nombre:</label>
-                <input type="text" name="name" placeholder="John Doe">
-            </div>
-            <div>
-                <label for="email">Correo:</label>
-                <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
-            </div>
-            <div>
-                <label for="cel">Celular:</label>
-                <input type="tel" name="cel" id="cel" placeholder="11 12345678">
-            </div>
-            <div>
-                <label for="">Comentarios:</label>
-                <textarea name="" id="" placeholder="Dejanos tus comentarios:"></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Comenzar de nuevo">
-            </div>
-        </form>
+            <iframe data-testid="embed-iframe" style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/1dQDdZKvdJ5gNhUF56S8Qu?utm_source=generator&si=61a49307f5c740fd"
+            width="100%" height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+            class="spoty"></iframe>
+            
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2012.4051132461627!2d-64.55823980713866!3d-31.97585547324513!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2b0447c2bd5ff%3A0x3245f2bd7c030f4c!2sPlaza%20Jose%20Hernandez!5e0!3m2!1ses!2sar!4v1784734245130!5m2!1ses!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin" class="maps"></iframe>
+            
+            <form action="" class="form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" placeholder="John Doe">
+                    <label for="email">Correo:</label>
+                    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+                    <label for="cel">Celular:</label>
+                    <input type="tel" name="cel" id="cel" placeholder="11 12345678">
+                    <label for="">Comentarios:</label>
+                    <textarea name="" id="" placeholder="Dejanos tus comentarios:"></textarea>
+                <div class="form-btn">
+                    <input type="submit" value="Enviar" class="btns">
+                    <input type="reset" value="Comenzar de nuevo" class="btns">
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <p>Desarrollado por Jesús y Luciano</p>
@@ -84,17 +97,20 @@
             <ul class="rs">
                 <li>
                     <a href="https://www.instagram.com/" target="_blank" title="Instagram" aria-label="Instagram">
-                        <img class="RRSS-img" src="../assets/logos/instagram.png" alt="Logo de Instagram" title="Logo de Instagram">
+                        <img class="RRSS-img" src="../assets/logos/instagram.png" alt="Logo de Instagram"
+                            title="Logo de Instagram">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com/" target="_blank" title="Facebook" aria-label="Facebook">
-                        <img class="RRSS-img" src="../assets/logos/facebook.png" alt="Logo de Facebook" title="Logo de Facebook">
+                        <img class="RRSS-img" src="../assets/logos/facebook.png" alt="Logo de Facebook"
+                            title="Logo de Facebook">
                     </a>
                 </li>
                 <li>
                     <a href="https://wa.me/" target="_blank" title="WhatsApp" aria-label="WhatsApp">
-                        <img class="RRSS-img ws" src="../assets/logos/whatsapp.png" alt="Logo de WhatsApp" title="Logo de WhatsApp">
+                        <img class="RRSS-img ws" src="../assets/logos/whatsapp.png" alt="Logo de WhatsApp"
+                            title="Logo de WhatsApp">
                     </a>
                 </li>
             </ul>
@@ -104,6 +120,9 @@
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
     <!-- BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

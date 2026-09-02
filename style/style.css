@@ -49,13 +49,9 @@ header{
     background-color: var(--bg-ppal);
     z-index: 1;
     margin-bottom: 32px;
-    /* height: 10vh; */
     position: sticky;
     top: 0;
     padding: 0 20px;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
 }
 
 .logo {
@@ -63,14 +59,14 @@ header{
     width: auto;
 }
 
-header nav ul{
+/* header nav ul{
     display: flex;
     gap: 10px;
 }
 
 header nav ul li {
     list-style: none;
-}
+} */
 .nav-link {
     text-decoration: none;
     color: black;
@@ -116,6 +112,9 @@ footer{
     right: 50px;
 }
 /* HOME */
+.home{
+    text-align: center;
+}
 .hero{
     display: flex;
     flex-direction: row;
@@ -172,7 +171,64 @@ footer{
     border-radius: 50px;
 }
 /* ESTILO DE CAFES */
-
+.type{
+    padding: 0 100px;
+    display: grid;
+    grid-template-areas: "h2 h2" "p p" "t1 t2" "t1 t2" "t3 t4" "t3 t4" "t5 t6" "t5 t6";
+    column-gap: 50px;
+    row-gap: 25px;
+    text-align: center;
+}
+.type h2{
+    grid-area: h2;
+    font-size: 2.5rem;
+}
+.type p{
+    grid-area: p;
+    font-size: 1.5rem;
+}
+.type-img{
+    width: 25vw;
+    height: auto;
+    border-radius: 50px;
+}
+.norm{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border: 2px solid var(--accent);
+    border-radius: 25px;
+}
+.rev{
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border: 2px solid var(--accent);
+    border-radius: 25px
+}
+.ris{
+    grid-area: t1;
+}
+.am{
+    grid-area: t2;
+}
+.es{
+    grid-area: t3;
+}
+.dob{
+    grid-area: t4;
+}
+.ccl{
+    grid-area: t5;
+}
+.cap{
+    grid-area: t6;
+}
 /* MENU */
 .main-menu{
     text-align: center;
@@ -194,9 +250,7 @@ footer{
     gap: 40px;
 }
 .coffee-card{
-    /* padding: 30px; */
-    width: 15vw;
-    height: 52vh;
+    padding: 30px;
     text-align: center;
     border: 2px solid var(--text);
     border-radius: 25px;
@@ -208,6 +262,7 @@ footer{
 .coffee-card h3{
     font-size: 1.8rem;
     margin-bottom: 10px;
+    width: 15vw;
 }
 .flip-card{
     width: 15vw;
@@ -236,6 +291,7 @@ footer{
 .front img{
     height: 40vh;
     width: auto;
+    max-width: 15vw;
     border-radius: 25px;
     object-fit: cover;
 }
@@ -248,8 +304,12 @@ footer{
     align-items: center;
 }
 .back p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
+}
+.order{
+    display: flex;
+    gap: 20px;
 }
 .btn-order{
     padding: 15px;
@@ -260,7 +320,6 @@ footer{
     border-radius: 25px;
 }
 /* NOSOTROS */
-
 .sobre-nosotros {
     text-align: center;
     display: flex;
@@ -275,17 +334,13 @@ footer{
 .sobre-nosotros p {
     font-size: 1.5rem;
 }
-.info-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 32px;
-}
 .info-container p {
-    max-width: 50%;
+    width: 75vw;
 }
 .equipo {
-    max-width: 1150px;
+    max-width: 45vw;
+    float: left;
+    margin-right: 50px;
 }
 .equipo img {
     width: 100%;
@@ -307,3 +362,189 @@ footer{
 }
 
 /* CONTACTO */
+.feed{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.feed h2{
+    font-size: 2.5rem;
+}
+.feed p{
+    font-size: 1.5rem;
+}
+.main-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 25px;
+}
+.spoty{
+    width: 30vw;
+    height: 50vh;
+    order: 1;
+}
+.maps{
+    width: 30vw;
+    height: 50vh;
+    order: 3;
+}
+.form{
+    width: 30vw;
+    height: 50vh;
+    order: 2;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+label{
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+input, textarea{
+    text-align: center;
+    font-weight: bold;
+    width: 25vw;
+}
+.form-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.btns{
+    width: 10vw;
+    font-size: 1.3rem;
+    background-color: var(--accent);
+    color: var(--text);
+    border: var(--text) 2px solid;
+    border-radius: 20px;
+}
+.btns:hover{
+    background-color: var(--bg-ppal);
+    border: var(--accent) 2px solid;
+    color: var(--headings);
+}
+
+@media (min-width: 300px) and (max-width: 567px){
+    main{
+        padding: 0 50px;
+    }
+    /* HEADER */
+    header h1{
+        display: none;
+    }
+    .logo{
+        height: 10vh;
+    }
+    /* FOOTER */
+    footer{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* HOME */
+    .hero{
+        flex-direction: column;
+    }
+    .hero-img{
+        width: 80vw;
+        height: auto;
+    }
+    /* ESTILOS */
+    .type{
+        padding: 0 25px;
+        grid-template-areas:
+        "h2" "p" "t1" "t2" "t3" "t4" "t5" "t6";
+        margin-bottom: 25px;
+    }
+    .type h2{
+        font-size: 2rem;
+    }
+    .type p{
+        font-size: 1.3rem;
+    }
+    .type-img{
+        width: 75vw;
+    }
+    .norm, .rev{
+        flex-direction: column;
+    }
+    /* MENU */
+    .main-menu h2{
+        font-size: 2rem;
+    }
+    .main-menu p{
+        font-size: 1.3rem;
+    }
+    .menu-flex{
+        flex-direction: column;
+    }
+    .coffee-card h3{
+        width: 60vw;
+    }
+    .flip-card{
+        width: 60vw;
+    }
+    .front img{
+        height: auto;
+        width: 50vw;
+        max-width: none;
+    }
+    /* SOBRE NOSOTROS */
+    .sobre-nosotros h2{
+        font-size:  2rem;
+    }
+    .sobre-nosotros p{
+        font-size: 1.3rem;
+    }
+    .equipo{
+        max-width: 90vw;
+        float: none;
+        margin-right: 0;
+    }
+    /* CONTACTANOS */
+    .feed{
+        margin-bottom: 0;
+    }
+    .feed h2{
+        font-size: 2rem;
+    }
+    .feed p{
+        font-size: 1.3rem;
+    }
+    .main-contacto{
+        flex-direction: column;
+        margin-bottom: 0;
+        gap: 25px;
+    }
+    .spoty{
+        width: 90vw;
+        order: 2;
+    }
+    .maps{
+        width: 90vw;
+    }
+    .form{
+        width: 90vw;
+        height: auto;
+        order: 1;
+    }
+    input{
+        width: 75vw;
+        height: 5vh;
+    }
+    textarea{
+        width: 75vw;
+        height: 10vh;
+    }
+    .btns{
+        width: 40vw;
+    }
+}
