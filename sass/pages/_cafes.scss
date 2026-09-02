@@ -1,0 +1,69 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.type{
+    padding: 0 100px;
+    display: grid;
+    grid-template-areas: "h2 h2" "p p" "t1 t2" "t1 t2" "t3 t4" "t3 t4" "t5 t6" "t5 t6";
+    column-gap: 50px;
+    row-gap: 25px;
+    text-align: center;
+    h2{
+        grid-area: h2;
+    }
+    p{
+        grid-area: p;
+    }
+    .norm, .rev{
+        figure{
+            .type-img{
+                width: 25vw;
+                height: auto;
+                border-radius: 50px;
+            }
+        }
+    }
+    .norm{
+        padding: 10px;
+        @include m.flex(row, nowrap, center, center, 25px);
+        border: 2px solid v.$accent;
+        border-radius: 25px;
+    }
+    .rev{
+        padding: 10px;
+        @include m.flex(row-reverse, nowrap, center, center, 25px);
+        border: 2px solid v.$accent;
+        border-radius: 25px;
+    }
+    .ris{
+        grid-area: t1;
+    }
+    .am{
+        grid-area: t2;
+    }
+    .es{
+        grid-area: t3;
+    }
+    .dob{
+        grid-area: t4;
+    }
+    .ccl{
+        grid-area: t5;
+    }
+    .cap{
+        grid-area: t6;
+    }
+    @include m.mobile{
+        padding: 0 25px;
+        grid-template-areas:"h2" "p" "t1" "t2" "t3" "t4" "t5" "t6";
+        margin-bottom: 25px;
+        .norm, .rev{
+            flex-direction: column;
+            figure{
+                .type-img{
+                    width: 75vw;
+                }
+            }
+        }
+    }
+}

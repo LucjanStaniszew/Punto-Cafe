@@ -1,0 +1,38 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+header{
+    background-color: v.$bg-ppal;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    padding: 0 20px;
+    .logo{
+        height: 10vh;
+        width: auto;
+    }
+    .nav-link{
+        text-decoration: none;
+        color: black;
+        font-weight: 900;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+    .bg-propio{
+        background-color: v.$bg-ppal;
+    }
+    .nav-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @include m.mobile{
+        h1{
+            display: none;
+        }
+        .logo{
+            height: 10vh;
+        }
+    }
+}

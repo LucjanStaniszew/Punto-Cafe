@@ -1,0 +1,36 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+main{
+    .sobre-nosotros{
+        text-align: center;
+        @include m.flex(column, nowrap, center, center, 32px);
+        .info-container{
+            .equipo{
+                max-width: 45vw;
+                float: left;
+                margin-right: 50px;
+                @include m.mobile{
+                    max-width: 90vw;
+                    float: none;
+                    margin-right: 0;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            p{
+                width: 75vw;
+            }
+        }
+    }
+    .destacados{
+        margin: 32px 0;
+        text-align: center;
+        @include m.flex(column, nowrap, center, center, 32px);
+        .carousel-container{
+            max-width: 1150px;
+        }
+    }
+
+}

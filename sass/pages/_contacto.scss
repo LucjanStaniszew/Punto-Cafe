@@ -1,0 +1,91 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+main{
+    .feed{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    .main-contacto{
+        @include m.flex(row, nowrap, center, center, 50px);
+        margin-bottom: 50px;
+        .spoty{
+            width: 30vw;
+            height: 50vh;
+            order: 1;
+        }
+        .maps{
+            width: 30vw;
+            height: 50vh;
+            order: 3;
+        }
+        .form{
+            width: 30vw;
+            height: 50vh;
+            order: 2;
+            @include m.flex(column, nowrap, center, center, 15px);
+            label{
+                font-weight: bolder;
+                font-size: 1.3rem;
+            }
+            input, textarea{
+                text-align: center;
+                font-weight: bold;
+                width: 25vw;
+            }
+            .form-btn{
+                @include m.flex(row, nowrap, center, center, 50px);
+                .btns{
+                    width: 10vw;
+                    font-size: 1rem;
+                    background-color: v.$accent;
+                    color: v.$text;
+                    border: 2px solid v.$text;
+                    border-radius: 25px;
+                    &:hover{
+                        background-color: v.$bg-ppal;
+                        color: v.$headings;
+                        border: 2px solid v.$accent;
+                    }
+                }
+            }
+        }
+    }
+    @include m.mobile{
+        .feed{
+            margin-bottom: 0;
+        }
+        .main-contacto{
+            flex-direction: column;
+            margin-bottom: 25px;
+            gap: 25px;
+            .spoty{
+                width: 90vw;
+                order: 2;
+            }
+            .maps{
+                width: 90vw;
+            }
+            .form{
+                width: 90vw;
+                height: auto;
+                order: 1;
+                input{
+                    width: 75vw;
+                    height: 5vh;
+                }
+                textarea{
+                    width: 75vw;
+                    height: 10vh;
+                }
+                .form-btn{
+                    .btns{
+                        width: 40vw;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@mixin flex($fd, $fw, $jc, $ai, $gap){
+    display: flex;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
+
+@mixin tablet{
+    @media (min-width: 568px) and (max-width: 1023px){
+        @content;
+    }
+}
+
+@mixin mobile{
+    @media (min-width: 300px) and (max-width: 567px){
+        @content;
+    }
+}
+
+// EXTEND
+// % = placeholder, es una clase que se puede reutilizar en el codigo y modificar a gusto
+%flex10px{
+    display: flex;
+    gap: 10px;
+}

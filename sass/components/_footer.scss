@@ -1,0 +1,35 @@
+@use "../utilities/mixins" as m;
+
+footer{
+    height: 10vh;
+    padding: 0 20px;
+    @include m.flex(row, nowrap, space-between, center, 0);
+    font-weight: 900;
+    font-size: 1.5rem;
+    .footer-nav{
+        .rs{
+            display: flex;
+            gap: 20px;
+            li{
+                list-style: none;
+                a{
+                    .RRSS-img{
+                        height: 5vh;
+                        width: auto;
+                    }
+                    .ws{
+                        position: fixed;
+                        bottom: 50px;
+                        right: 50px;
+                    }
+                }
+            }
+        }
+    }
+    @include m.mobile{
+        height: auto;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

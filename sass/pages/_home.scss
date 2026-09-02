@@ -1,0 +1,69 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.home{
+    text-align: center;
+    .hero{
+        @include m.flex(row, nowrap, space-evenly, center, 75px);
+        .left{
+            @include m.flex(column, nowrap, start, center, 50px);
+            font-weight: bold;
+            figure{
+                .hero-logo{
+                    height: 25vh;
+                    width: auto;
+                }
+            }
+            .hero-title{
+                font-size: 2rem;
+            }
+            .hero-p{
+                text-align: center;
+                font-size: 1.2rem;
+            }
+            .hero-list{
+                color: v.$accent;
+                text-align: center;
+                list-style: none;
+                @extend %flex10px;
+                li{
+                    padding: 5px;
+                }
+            }
+            .hero-nav{
+                @extend %flex10px;
+                a{
+                    padding: 10px;
+                    color: v.$text;
+                    border: 2px solid v.$accent;
+                    border-radius: 25px;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+            }
+        }
+        .right{
+            figure{
+                .hero-img{
+                    width: 45vw;
+                    height: auto;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+    @include m.mobile{
+        .hero{
+            flex-direction: column;
+            .right{
+                figure{
+                    .hero-img{
+                        width: 80vw;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
