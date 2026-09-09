@@ -1,0 +1,78 @@
+h1 {
+    background-image: linear-gradient(to bottom, rgb(142, 208, 230), rgb(32, 163, 207));
+}
+/* h1:hover {
+    transform: translate(50px, 20px);
+} */
+
+
+
+div {
+    width: 400px;
+    height: 400px;
+    background-image: radial-gradient(ellipse 250px 250px, yellow, green);
+    /* transform: skew(20deg, 10deg); */
+}
+div:hover {
+    /* transform: rotate(270deg); */
+    /* transform: rotateX(70deg); */
+    /* transform: rotateY(70deg); */
+    /* transform: rotateZ(70deg); */
+    /* transform: scale(1.2); */
+}
+
+/* KEYFRAMES */
+/* @keyframes efecto-custom {
+    0% {width: 100px;}
+    25% {width: 150px;}
+    50% {width: 200px; background-color: green;}
+    75% {width: 300px;}
+    100% {width: 400px; background-color: yellow;}
+}
+
+article {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: efecto-custom;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+@keyframes card-flip {
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    border-radius: 16px;
+    text-align: center;
+}
+.card:hover {
+    animation-name: card-flip;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
+    animation-delay: 0.3s;
+}
+
+@keyframes hover-color {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    background-color: red;
+    animation-name: hover-color;
+    animation-duration: 1.2;
+    animation-iteration-count: 1;
+} */

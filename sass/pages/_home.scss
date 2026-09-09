@@ -40,7 +40,11 @@
                     text-decoration: none;
                     font-size: 1.2rem;
                     text-align: center;
+                    &:hover {
+                        background-color: v.$surface;
+                    }
                 }
+                
             }
         }
         .right{
